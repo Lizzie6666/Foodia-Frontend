@@ -4,11 +4,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-<<<<<<< Updated upstream
-@NgModule({
-  declarations: [
-    AppComponent
-=======
+
 import { IngredientListComponent } from './component/ingredient/ingredient-list/ingredient-list.component';
 import { CreateEditComponent } from './component/ingredient/create-edit/create-edit.component';
 
@@ -39,19 +35,45 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
+FooterComponent,
+
+
     CommunityComponent,
     AboutUsComponent,
     IngredientListComponent,
     CreateEditComponent,
     IngredientDialogComponent,
+
     IngredientComponent,
     NavbarComponent
 
->>>>>>> Stashed changes
+    IngredientComponent
+
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatButtonModule,
+    MatSortModule,
+    MatPaginatorModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatToolbarModule,
+    MatDialogModule,
+    MatMomentDateModule,
+    MatSelectModule,
+    MatGridListModule,
+    MatCardModule,
+    MatIconModule,
+    CommonModule,
+    MatMenuModule
   ],
   providers: [
     provideClientHydration()
