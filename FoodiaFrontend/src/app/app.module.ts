@@ -3,6 +3,8 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { IngredientListComponent } from './component/ingredient/ingredient-list/ingredient-list.component';
+import { CreateEditComponent } from './component/ingredient/create-edit/create-edit.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,11 +25,17 @@ import { MatCardModule} from '@angular/material/card';
 import { MatIconModule} from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
 import { MatMenuModule} from '@angular/material/menu';
+import { IngredientDialogComponent } from './component/ingredient/ingredient-list/ingredient-dialog/ingredient-dialog.component'
+import { IngredientComponent } from './component/ingredient/ingredient.component';
 
  
 @NgModule({
   declarations: [
     AppComponent,
+    IngredientListComponent,
+    CreateEditComponent,
+    IngredientDialogComponent,
+    IngredientComponent
 
   ],
   imports: [
