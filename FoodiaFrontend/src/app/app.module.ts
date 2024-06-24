@@ -3,6 +3,9 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CommunityComponent } from './component/community/community.component';
+import { AboutUsComponent } from './component/about-us/about-us.component';
+
 import { IngredientListComponent } from './component/ingredient/ingredient-list/ingredient-list.component';
 import { CreateEditComponent } from './component/ingredient/create-edit/create-edit.component';
 
@@ -32,6 +35,8 @@ import { IngredientComponent } from './component/ingredient/ingredient.component
 @NgModule({
   declarations: [
     AppComponent,
+    CommunityComponent,
+    AboutUsComponent,
     IngredientListComponent,
     CreateEditComponent,
     IngredientDialogComponent,
