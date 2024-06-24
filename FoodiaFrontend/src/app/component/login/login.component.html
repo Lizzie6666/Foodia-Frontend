@@ -1,0 +1,29 @@
+<div class="container">
+   <div class="overlay">
+     <div class="login-form">
+       <div class="text-center mb-4">
+         <img src="assets/images/Imagen1.png"  alt="Foodia Logo" class="logo">
+       </div>
+       <form #form="ngForm" (ngSubmit)="login(form)">
+         <label for="username" class="form-label">UserName</label>
+         <div class="mb-3">
+           <input id="username" name="username" type="text" class="form-control" [(ngModel)]="creds.username" required>
+         </div>
+         <label for="password" class="form-label">Password</label>
+         <div class="mb-3">
+           <input id="password" name="password" type="password" class="form-control" [(ngModel)]="creds.password" required>
+         </div>
+         <br>
+         <br>
+         <div class="d-grid">
+           <button class="btn btn-lg btn-primary" type="submit">Login</button>
+         </div>
+         <br>
+         <div class="text-center mt-3">
+           <a href="/signup" class="sign-up-link">Sign up</a>
+         </div>
+       </form>
+     </div>
+   </div>
+ </div>
+ 
