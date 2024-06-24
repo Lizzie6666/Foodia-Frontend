@@ -1,0 +1,26 @@
+<div class="contenedor">
+    <form [formGroup]="form" (submit)="aceptar()">
+      <mat-form-field class="example-full-width">
+        <mat-label>Código</mat-label>
+        <input matInput hidden placeholder="Código" formControlName="id">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput required placeholder="Name" formControlName="name">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput required placeholder="Email" formControlName="calories">
+      </mat-form-field>
+      <br>
+    
+      <br>
+      <button mat-raised-button type="submit" color="primary">Aceptar</button>
+      <button mat-raised-button color="warn" routerLink="/recipe">Cancelar</button>
+      <p>{{mensaje}}</p>
+  
+    </form>
+  </div>
+  
