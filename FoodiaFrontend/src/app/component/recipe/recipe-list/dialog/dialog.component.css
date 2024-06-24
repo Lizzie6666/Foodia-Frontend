@@ -1,0 +1,19 @@
+.dialog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+mat-dialog-close {
+  margin-left: auto; /* Pushes the button to the right */
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+.dialog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}

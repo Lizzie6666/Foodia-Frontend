@@ -1,0 +1,18 @@
+<div *ngIf="dialogOpen" class="view_recipe">
+  <h1 mat-dialog-title>{{ data.title }}</h1>
+  <button mat-button mat-dialog-close>Cerrar</button>
+  <div mat-dialog-content>
+    <img [src]="data.image" alt="receta" class="dialog-image">
+    <p><strong>Tiempo:</strong> {{ data.time }} mins</p>
+    <p><strong>Estilo alimentación:</strong> {{ data.type }}</p>
+    <p><strong>Ingredientes:</strong></p>
+    <ul>
+      <li *ngFor="let ingredient of data.ingredients">{{ ingredient.calories }} {{ ingredient.name }}</li>
+    </ul>
+    <p><strong>Instrucciones:</strong></p>
+    <p>{{ data.instructions }}</p>
+  </div>
+  <div mat-dialog-actions>
+  </div>
+</div>
+

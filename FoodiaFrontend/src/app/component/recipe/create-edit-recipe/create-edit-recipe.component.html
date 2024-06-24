@@ -1,0 +1,70 @@
+
+
+<div class="container">
+  <form [formGroup]="recipeForm" (ngSubmit)="onSubmit()">
+    <div class="form-top">
+      <div class="image-upload-container">
+        <div class="image-upload">
+          <img *ngIf="selectedImage" [src]="selectedImage" alt="Recipe Image" class="recipe-image">
+          <input type="file" (change)="onFileSelected($event)" hidden #fileInput>
+          <button mat-raised-button type="button" (click)="fileInput.click()" class="btn-1">Subir imagen</button>
+        </div>
+      </div>
+      
+      <div class="form-fields">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Título</mat-label>
+          <input matInput formControlName="title">
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Descripción</mat-label>
+          <input matInput formControlName="description">
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="half-width">
+          <mat-label>Usuario</mat-label>
+          <mat-select formControlName="user">
+            <mat-option *ngFor="let user of users" [value]="user">{{ user.username }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="half-width">
+          <mat-label>Ingredientes</mat-label>
+          <mat-select formControlName="ingredients" multiple>
+            <mat-option *ngFor="let ingredient of ingredients" [value]="ingredient">{{ ingredient.name }}</mat-option>
+          </mat-select>
+          <div class="ingredients-buttons">
+            <button mat-raised-button type="button" (click)="onAddIngredient()" class="btn-1">Añadir</button>
+            <button mat-raised-button type="button" (click)="onNewIngredient()" class="btn-1">Nuevo ingrediente</button>
+          </div>
+        </mat-form-field>
+        <div class="category-time-diet full-width">
+          <mat-form-field appearance="fill">
+            <mat-label>Categoría</mat-label>
+            <mat-select formControlName="category">
+              <mat-option *ngFor="let category of categories" [value]="category">{{ category.name }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Tiempo de preparación</mat-label>
+            <input matInput formControlName="time">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Tipo de alimentación</mat-label>
+            <mat-select formControlName="type">
+              <mat-option *ngFor="let dietType of type" [value]="dietType.name">{{ dietType.name }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Instrucciones</mat-label>
+      <textarea matInput formControlName="instructions"></textarea>
+    </mat-form-field>
+    <button mat-raised-button type="submit" class="btn-1">Publicar</button>
+  </form>
+</div>
+
+
+
+

@@ -1,0 +1,15 @@
+.btn-1 {
+  display: inline-block;
+  background-color: #F79F1A;
+  padding: 13px 30px;
+  border-radius: 25px;
+  color: #f5f5f5;
+  text-transform: capitalize;
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-left: 1140px; /* Ajusta según sea necesario */
+  font-family: 'Inter', sans-serif;
+  line-height: 1; /* Asegura que la altura de línea sea la correcta */
+  vertical-align: middle; /* Asegura que el contenido esté verticalmente alineado */
+}
+
+/* <button mat-raised-button (click)="goToIngredients()" class="btn-1">Ingredientes</button>*/
