@@ -4,10 +4,6 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { FooterComponent } from './component/footer/footer.component';
-import { CommunityComponent } from './component/community/community.component';
-import { AboutUsComponent } from './component/about-us/about-us.component';
-
 
 import { IngredientListComponent } from './component/ingredient/ingredient-list/ingredient-list.component';
 import { CreateEditComponent } from './component/ingredient/create-edit/create-edit.component';
@@ -33,6 +29,7 @@ import { CommonModule } from '@angular/common';
 import { MatMenuModule} from '@angular/material/menu';
 import { IngredientDialogComponent } from './component/ingredient/ingredient-list/ingredient-dialog/ingredient-dialog.component'
 import { IngredientComponent } from './component/ingredient/ingredient.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
 
  
 @NgModule({
@@ -40,11 +37,16 @@ import { IngredientComponent } from './component/ingredient/ingredient.component
     AppComponent,
 FooterComponent,
 
+
     CommunityComponent,
     AboutUsComponent,
     IngredientListComponent,
     CreateEditComponent,
     IngredientDialogComponent,
+
+    IngredientComponent,
+    NavbarComponent
+
     IngredientComponent
 
 

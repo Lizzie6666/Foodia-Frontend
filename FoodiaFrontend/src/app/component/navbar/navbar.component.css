@@ -1,0 +1,39 @@
+mat-toolbar {
+    background-color: white; /* Fondo blanco para la barra de herramientas */
+    color: black; /* Color de texto negro */
+  }
+  
+  .mat-button, .mat-button-wrapper, a.mat-button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: black !important; /* Color del texto de los botones a negro */
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+    color:black;
+  }
+  
+  #logo {
+    width: 120px; /* Ajusta según sea necesario */
+    height: auto;
+    margin-right: 16px;
+  }
+  
+  mat-toolbar-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+  }
+  
+  mat-icon {
+    color: black;
+  }
+  
+  a.active-link {
+    font-weight: bold;
+    color: black;
+  }
+  
